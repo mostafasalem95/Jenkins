@@ -30,12 +30,6 @@ public class VehiclesServiceTests {
 		assertThat(c.size() > 0).isEqualTo(true);
 	}
 	
-	@Test
-	public void checkIfCustomerHasVehicle() {
-		List<Customer> c = vService.getAllCustomers();
-		assertThat(null != c.get(0).getVehicle()).isEqualTo(true);
-		assertThat(c.get(0).getVehicle().size() > 0).isEqualTo(true);
-	}
 
 
 }
